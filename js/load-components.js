@@ -40,11 +40,11 @@ function showSection(sectionId) {
     const heroContent = document.querySelector('.hero-content');
     const heroSection = document.getElementById('hero-section');
     if (sectionId === 'home') {
+        heroSection.style.display = 'flex';
+        heroSection.style.height = '70vh';
         heroContent.style.display = 'block';
-        heroSection.style.height = '100vh';
     } else {
-        heroContent.style.display = 'none';
-        heroSection.style.height = '0';
+        heroSection.style.display = 'none'; // 완전히 숨김
     }
     
     // 네비게이션 활성 상태 업데이트
