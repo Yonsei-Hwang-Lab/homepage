@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWANG LAB @ YONSEI</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 비디오 배경 -->
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="https://cdn.pixabay.com/video/2020/07/21/45273-441722872_large.mp4" type="video/mp4">
+    </video>
+
+    <!-- 네비게이션 (여기는 고정) -->
+    <nav>
+        <div class="logo">HWANG LAB</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#members">Members</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#photos">Lab Photos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section id="hero-section" class="hero">
+        <div class="hero-content">
+            <h1>HWANG LAB</h1>
+            <p class="hero-subtitle">Single Cell Functional Genomics</p>
+            <p>Decoding Cellular Heterogeneity for Precision Medicine</p>
+        </div>
+    </section>
+
+    <!-- 동적으로 로드될 컴포넌트들 -->
+    <div id="research-container"></div>
+    <div id="members-container"></div>
+    <div id="publications-container"></div>
+    <div id="photos-container"></div>
+    <div id="contact-container"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hwang Lab, Yonsei University College of Medicine. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/load-components.js"></script>
+</body>
+</html>
