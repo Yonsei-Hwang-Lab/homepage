@@ -19,10 +19,8 @@ homepage/
 │   └── contact.html       # 연락처
 └── images/                # 이미지 파일들 (직접 추가 필요)
     ├── bhwang.jpg
-    ├── suhyeon_lee.jpg
     ├── ...
     └── lab_photos/
-        ├── 2025_ksbmb_emm.jpg
         └── ...
 ```
 
@@ -79,32 +77,6 @@ Alumni 섹션에 이름을 추가하세요.
 
 ### 5. 연락처 업데이트
 `components/contact.html` 파일을 수정하세요.
-
-## Git 사용법
-
-### 초기 설정
-```bash
-cd homepage
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/scHwanglab/homepage.git
-git push -u origin main
-```
-
-### 파일 수정 후 업데이트
-```bash
-git add .
-git commit -m "업데이트 내용 설명"
-git push
-```
-
-## 주의사항
-
-- 이미지 파일은 직접 `images/` 폴더에 추가해야 합니다
-- 비디오 파일은 `images/homepage_background.mp4`로 추가하거나 index.html에서 URL을 변경하세요
-- 각 컴포넌트 파일은 독립적으로 수정 가능합니다
 
 ## 문의
 문제가 발생하면 bhwang@yuhs.ac로 연락주세요.
