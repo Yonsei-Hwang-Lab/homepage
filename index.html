@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HWANG LAB @ YONSEI</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <title>HWANG LAB @ YONSEI</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- 비디오 배경 -->
-    <video class="hero-video" autoplay muted loop playsinline>
-        <source src="images/homepage_background.mp4" type="video/mp4">
-    </video>
 
-    <!-- 네비게이션 (여기는 고정) -->
-    <nav>
-        <div class="logo">HWANG LAB</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#members">Members</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#photos">Lab Photos</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- ✅ BACKGROUND (항상 존재) -->
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="images/homepage_background.mp4" type="video/mp4">
+  </video>
 
-    <!-- 히어로 섹션 -->
-    <section id="hero-section" class="hero">
-        <div class="hero-content">
-            <h1>HWANG LAB @ YONSEI</h1>
-            <p class="hero-subtitle">EVERY CELL IS SPECIAL :)</p>
-            <p>Department of Medical Science, Yonsei University College of Medicine</p>
-        </div>
-    </section>
+  <!-- NAV -->
+  <nav>
+    <div class="logo">HWANG LAB</div>
+    <ul class="nav-links">
+      <li><a href="#" data-target="home" class="active">Home</a></li>
+      <li><a href="#" data-target="research">Research</a></li>
+      <li><a href="#" data-target="members">Members</a></li>
+      <li><a href="#" data-target="publications">Publications</a></li>
+      <li><a href="#" data-target="photos">Lab Photos</a></li>
+      <li><a href="#" data-target="contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- 동적으로 로드될 컴포넌트들 -->
-    <div id="research-container"></div>
-    <div id="members-container"></div>
-    <div id="publications-container"></div>
-    <div id="photos-container"></div>
-    <div id="contact-container"></div>
+  <!-- ================= HOME ================= -->
+  <div id="home-view">
+    <header class="hero">
+      <div class="hero-content">
+        <h1>HWANG LAB @ YONSEI</h1>
+        <p class="hero-subtitle">EVERY CELL IS SPECIAL :)</p>
+        <p>Department of Medical Science, Yonsei University College of Medicine</p>
+      </div>
+    </header>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Hwang Lab, Yonsei University College of Medicine. All rights reserved.</p>
-    </footer>
+    <div id="home-container"></div>
+  </div>
 
-    <!-- JavaScript -->
-    <script src="js/load-components.js"></script>
+  <!-- ================= SPA ================= -->
+  <main id="spa-view">
+
+    <section id="research" class="spa-section"></section>
+    <section id="members" class="spa-section"></section>
+    <section id="publications" class="spa-section"></section>
+    <section id="photos" class="spa-section"></section>
+    <section id="contact" class="spa-section"></section>
+
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 Hwang Lab</p>
+  </footer>
+
+  <script src="js/load-components.js"></script>
 </body>
-</html>
